@@ -1,31 +1,20 @@
 package homework_nr_12;
 
+import java.util.function.Predicate;
+
 public enum CheckInteger {
-    FIRST(1),
-    SECOND(-34),
-    THIRD(2345),
-    FOURTH(0);
+    CHECK_IF_ODD(i -> i % 2 != 0),
+    CHECK_IF_EVEN(i -> i % 2 == 0),
+    CHECK_IF_NEGATIVE(i -> i < 0),
+    CHECK_IF_POSITIVE(i -> i > 0);
 
-    private int i;
+    private Predicate<Integer> checkInteger;
 
-    CheckInteger(int i){
-        this.i = i;
+    CheckInteger(Predicate<Integer> checkInteger) {
+        this.checkInteger = checkInteger;
     }
 
-    public boolean CHECK_IF_ODD(){
-        return (i % 2 !=0);
+    public Predicate<Integer> getCheckInteger() {
+        return checkInteger;
     }
-
-    public boolean CHECK_IF_EVEN(){
-        return (i % 2 == 0);
-    }
-
-    public boolean CHECK_IF_NEGATIVE(){
-        return (i < 0);
-    }
-
-    public boolean CHECK_IF_POSITIVE(){
-        return (i > 0);
-    }
-
 }

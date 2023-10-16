@@ -14,13 +14,13 @@ public class Main {
         System.out.println(FuelTypes.LPG.isLiquidFuel());
         System.out.println(FuelTypes.ELECTRIC.isLiquidFuel());
 
-        CheckInteger h = CheckInteger.valueOf("FIRST");
-        System.out.println(h.CHECK_IF_EVEN());
-        System.out.println(h.CHECK_IF_NEGATIVE());
-        System.out.println(h.CHECK_IF_ODD());
-        System.out.println(h.CHECK_IF_POSITIVE());
+        chekIntegerAndPrintTheResult(53, CheckInteger.CHECK_IF_ODD );
+        chekIntegerAndPrintTheResult(-2, CheckInteger.CHECK_IF_EVEN );
+        chekIntegerAndPrintTheResult(17, CheckInteger.CHECK_IF_NEGATIVE);
+        chekIntegerAndPrintTheResult(0, CheckInteger.CHECK_IF_POSITIVE);
 
-
-
+    }
+    public static void chekIntegerAndPrintTheResult(int x, CheckInteger check){
+        System.out.println(check.getCheckInteger().test(x));
     }
 }
