@@ -1,11 +1,11 @@
 package bonus_hw_2.cash;
 
-import bonus_hw_2.Task;
+import bonus_hw_2.dto.TaskDTO;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CashList<T extends Task> {
+public class CashList<T extends TaskDTO> {
     private List<T> list = new ArrayList<>();
 
     public void addToLIst(T t) {

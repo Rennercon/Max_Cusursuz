@@ -1,4 +1,4 @@
-package bonus_hw_2;
+package bonus_hw_2.dto;
 
 import bonus_hw_2.enums.Status;
 import lombok.Getter;
@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Task {
+public class TaskDTO {
 
     private String name;
     private String description;
@@ -14,7 +14,7 @@ public class Task {
     private String deadLine;
     private Status status;
 
-    public Task(String name, String description, String priority, String deadLine, Status status) {
+    public TaskDTO(String name, String description, String priority, String deadLine, Status status) {
         this.name = name;
         this.description = description;
         this.priority = priority;

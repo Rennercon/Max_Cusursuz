@@ -1,6 +1,6 @@
 package bonus_hw_2.manager;
 
-import bonus_hw_2.Task;
+import bonus_hw_2.dto.TaskDTO;
 import bonus_hw_2.cash.CashList;
 import bonus_hw_2.service.TaskAction;
 import bonus_hw_2.service.impl.AddTaskAction;
@@ -8,7 +8,7 @@ import bonus_hw_2.service.impl.CompleteTaskAction;
 
 public class TaskManager {
 
-    private final CashList<Task> list = new CashList<>();
+    private final CashList<TaskDTO> list = new CashList<>();
     private final TaskAction addAction = new AddTaskAction();
     private final TaskAction completedAction = new CompleteTaskAction();
 
@@ -17,7 +17,7 @@ public class TaskManager {
         this.addAction.perform(name, description, priority, deadLine, this.list);
     }
 
-    public CashList<Task> getList() {
+    public CashList<TaskDTO> getList() {
         return list;
     }
 
@@ -29,7 +29,7 @@ public class TaskManager {
         return this.list.deleteByName(name);
     }
     public void showTasks () {
-        for (Task element:list.getList()) {
+        for (TaskDTO element:list.getList()) {
             System.out.println(element.getName());
             System.out.println(element.getDescription());
             System.out.println(element.getStatus());
