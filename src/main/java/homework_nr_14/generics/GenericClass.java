@@ -1,4 +1,4 @@
-package homework_nr_14;
+package homework_nr_14.generics;
 
 public class GenericClass<T extends Number>{
     private T value;

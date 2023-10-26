@@ -1,4 +1,4 @@
-package homework_nr_14;
+package homework_nr_14.dto;
 
 public class Airplane extends AirVehicle {
 

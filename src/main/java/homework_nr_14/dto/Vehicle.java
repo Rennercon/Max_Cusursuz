@@ -1,4 +1,4 @@
-package homework_nr_14;
+package homework_nr_14.dto;
 
 import java.io.Serializable;
 import java.util.ArrayList;

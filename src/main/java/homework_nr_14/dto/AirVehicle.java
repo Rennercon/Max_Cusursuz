@@ -1,6 +1,6 @@
-package homework_nr_14;
+package homework_nr_14.dto;
 
-public abstract class AirVehicle extends Vehicle{
+public abstract class AirVehicle extends Vehicle {
     private String model;
     private int nrOfSeats;
 

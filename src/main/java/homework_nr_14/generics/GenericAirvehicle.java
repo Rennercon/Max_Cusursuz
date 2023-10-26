@@ -1,4 +1,9 @@
-package homework_nr_14;
+package homework_nr_14.generics;
+
+import homework_nr_14.dto.AirVehicle;
+import homework_nr_14.dto.Airplane;
+import homework_nr_14.dto.Car;
+import homework_nr_14.dto.Helicopter;
 
 public class GenericAirvehicle<T extends AirVehicle> {
     private T[] airVehicle;
