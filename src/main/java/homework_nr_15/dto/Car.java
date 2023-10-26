@@ -1,9 +1,8 @@
-package homework_nr_15;
+package homework_nr_15.dto;
 
 import lombok.Getter;
 
 import java.util.Comparator;
-import java.util.PrimitiveIterator;
 
 @Getter
 public class Car implements Comparable<Car>{

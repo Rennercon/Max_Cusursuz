@@ -1,5 +1,7 @@
 package homework_nr_15;
 
+import homework_nr_15.dto.Car;
+import homework_nr_15.enums.Sort;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;

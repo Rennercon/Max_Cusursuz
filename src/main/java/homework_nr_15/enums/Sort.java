@@ -1,4 +1,6 @@
-package homework_nr_15;
+package homework_nr_15.enums;
+
+import homework_nr_15.dto.Car;
 
 import java.util.Comparator;
 
